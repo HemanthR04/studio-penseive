@@ -66,14 +66,7 @@ const Work = () => {
 
      
       </div>
-      <div>
-       
-      <div className="w-[180px] text-center font-Switzer border-black rounded-md mx-auto my-24 shadow-md h-full px-4 py-2 border-[1px] text-secondary bg-primary">
-        <button>
-            All Projects
-        </button>
-      </div>
-      </div>
+      
     </>
   );
 };
