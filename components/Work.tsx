@@ -12,6 +12,10 @@ const Work = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["98%", "80%"]);
   return (
     <>
+    
+    <div className="flex flex-col items-center justify-center">
+
+    
       <div className="w-full h-screen sticky top-0 -z-20 flex justify-center items-center text-[200px] text-secondary bg-primary">
         <h1>WORK</h1>
       </div>
@@ -59,6 +63,17 @@ const Work = () => {
           className="w-[50%] h-[70%] bg-white rounded-lg shadow-lg"
         ></motion.div>
       </motion.div>
+
+     
+      </div>
+      <div>
+       
+      <div className="w-[180px] text-center font-Switzer border-black rounded-md mx-auto my-24 shadow-md h-full px-4 py-2 border-[1px] text-secondary bg-primary">
+        <button>
+            All Projects
+        </button>
+      </div>
+      </div>
     </>
   );
 };
