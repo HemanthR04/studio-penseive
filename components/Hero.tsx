@@ -21,7 +21,7 @@ const Character = styled(motion.span)`
 `;
 
 const Hero = () => {
-  const text = "Studio Penseive";
+  const text = "Studio Pensieve";
 
   const ctrls = useAnimation();
 
@@ -59,7 +59,7 @@ const Hero = () => {
   };
 
   return (
-    <main className="hero w-full h-screen  flex">
+    <main className="hero w-full h-screen  flex  bg-primary ">
       <div className="Logo flex h-screen flex-col justify-end w-[50%]">
       
         <h1
