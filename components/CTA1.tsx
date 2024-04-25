@@ -8,7 +8,7 @@ const CTA1 = () => {
         We will help you build your dream space.
       </h1>
       <Link href={"/"}>
-        <div className="px-8 text-[24px] border-[1px] border-black rounded-2xl py-2 shadow-xl">
+        <div className="px-8 text-[24px] border-[1px] border-black rounded-2xl py-2 shadow-xl hover:bg-gray-200 hover:text-secondary">
           Contact Us
         </div>
       </Link>
