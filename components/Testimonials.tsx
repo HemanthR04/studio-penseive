@@ -9,6 +9,7 @@ const Testimonials = () => {
       direction="right"
       speed="normal"
     />
+    <h1 className='text-[42px] font-Switzer tracking-tighter'>Our clients love us!</h1>
   </div>
   )
 }
