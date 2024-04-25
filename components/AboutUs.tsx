@@ -1,6 +1,42 @@
 "use client";
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
+import { AnimatedTooltip } from "./ui/animated-tooltip";
+import Man1 from "../public/Man1.png";
+import Girl2 from "../public/Girl2.png";
+
+const people = [
+  {
+    id: 1,
+    name: "Sanjan Hoode",
+    designation: "Co-Founder",
+    image: Man1,
+  },
+  {
+    id: 2,
+    name: "Shashank Shetty",
+    designation: "Co-Founder",
+    image: Man1,
+  },
+  {
+    id: 3,
+    name: "Sahana Prabhu",
+    designation: "Architect",
+    image: Girl2,
+  },
+  {
+    id: 4,
+    name: "Lakshmi S Nair",
+    designation: "Interior Designer",
+    image: Girl2,
+  },
+  {
+    id: 5,
+    name: "Diya",
+    designation: "Interior Designer",
+    image: Girl2,
+  },
+];
 
 const Example = () => {
   return (
@@ -33,10 +69,14 @@ const HorizontalScrollCarousel = () => {
             <div className="absolute inset-0 z-10 grid place-content-center">
               <div className="flex justify-between items-center">
                 <div className="flex flex-col gap-4 px-12">
-                  <div className="h-[300px] w-[450px] bg-red-400">{/* Image */}</div>
-                  <div className="h-[300px] w-[450px] bg-red-300">{/* Image */}</div>
+                  <div className="h-[300px] w-[450px] bg-red-400">
+                    {/* Image */}
+                  </div>
+                  <div className="h-[300px] w-[450px] bg-red-300">
+                    {/* Image */}
+                  </div>
                 </div>
-                <div className="aboutUStext">
+                <div className="aboutUStext flex flex-col items-start gap-8">
                   <h1 className="text-[48px]">We are so and so</h1>
                   <p className="w-[70%] text">
                     Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur
@@ -48,6 +88,11 @@ const HorizontalScrollCarousel = () => {
                     distinctio illum ex ad, necessitatibus quaerat! Aut,
                     dolorum. At, porro cupiditate?
                   </p>
+                  <div>
+                    <div className="flex flex-row items-center justify-center mb-10 w-full">
+                      <AnimatedTooltip items={people} />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
