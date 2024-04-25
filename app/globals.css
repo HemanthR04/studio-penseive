@@ -11,10 +11,10 @@ body{
 *{
     -ms-overflow-style: none;
 }
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
-} */
-
-div{
-border: 2px solid red;
 }
+
+/* div{
+border: 2px solid red;
+} */

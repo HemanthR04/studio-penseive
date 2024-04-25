@@ -1,9 +1,10 @@
 import AboutUs from "@/components/AboutUs";
 import CTA1 from "@/components/CTA1";
-import Gallery from "@/components/Gallery";
+
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
+import Testimonials from "@/components/Testimonials";
 import Work from "@/components/Work";
 
 
@@ -19,7 +20,9 @@ export default function Home() {
       <Work/>
 
       <CTA1/>
-      {/* <Gallery/> */}
+      
+      <Testimonials/>
+      
       </>
   );
 }
