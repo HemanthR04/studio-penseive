@@ -29,7 +29,7 @@ const Work = () => {
         style={{ scaleX: x }}
         className="w-[94%] rounded-md mx-auto h-[90vh] sticky top-10 -z-10 flex flex-col justify-center items-center text-[200px] text-secondary bg-[#1b1c1f] shadow-2xl"
       >
-        <h1 className="text-primary text-[48px] py-10 font-Switzer font-bold tracking-widest">NIRVANA</h1>
+        <h1 className="text-primary text-[48px] py-10 font-Switzer font-bold tracking-widest">NORTH</h1>
         <motion.div
           whileInView={{ scaleX: 1.2}}
           transition={{ duration: 0.5 }}
@@ -42,7 +42,7 @@ const Work = () => {
         style={{ scaleX: x }}
         className=" w-[96%] rounded-md mx-auto  h-[90vh]  sticky top-20 -z-10 flex flex-col justify-center items-center text-[200px] text-secondary bg-[#808080] shadow-2xl"
       >
-        <h1 className="text-primary text-[48px] py-10 font-Switzer font-bold tracking-widest">NIRVANA</h1>
+        <h1 className="text-primary text-[48px] py-10 font-Switzer font-bold tracking-widest">SOUTH</h1>
         <motion.div
           whileInView={{ scaleX: 1.2}}
           transition={{ duration: 0.5 }}
@@ -55,7 +55,7 @@ const Work = () => {
         style={{ scaleX: x }}
         className="w-[98%] rounded-md mx-auto  h-[90vh]  flex sticky top-32 -z-10  flex-col justify-center items-center text-[200px] text-secondary bg-[#c2beb6] shadow-2xl"
       >
-        <h1 className="text-secondary text-[48px] py-10 font-Switzer font-bold tracking-widest">NIRVANA</h1>
+        <h1 className="text-secondary text-[48px] py-10 font-Switzer font-bold tracking-widest">EAST</h1>
         <motion.div
           whileInView={{ scaleX: 1.2}}
           transition={{ duration: 0.5 }}
@@ -68,7 +68,7 @@ const Work = () => {
         style={{ scaleX: x }}
         className="w-[100%] rounded-md mx-auto  h-screen  flex  -z-10 justify-center flex-col items-center text-[200px] text-secondary bg-[#dbdbd9] shadow-2xl"
       >
-        <h1 className="text-secondary text-[48px] py-10 font-Switzer font-bold tracking-widest">NIRVANA</h1>
+        <h1 className="text-secondary text-[48px] py-10 font-Switzer font-bold tracking-widest">WEST</h1>
         <motion.div
           whileInView={{ scaleX: 1.2}}
           transition={{ duration: 0.5 }}
