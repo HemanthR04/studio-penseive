@@ -4,6 +4,12 @@ import { useRef } from "react";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 import Man1 from "../public/Man1.png";
 import Girl2 from "../public/Girl2.png";
+import Gallery1 from '../public/Gallery1.png'
+import Gallery2 from '../public/Gallery2.png'
+import Gallery3 from '../public/Gallery3.png'
+import Gallery4 from '../public/Gallery4.png'
+import Gallery5 from '../public/Gallery5.png'
+import Image from "next/image";
 
 const people = [
   {
@@ -52,7 +58,7 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-75%"]);
 
   return (
     <section ref={targetRef} className="relative h-[300vh] bg-primary">
@@ -69,11 +75,11 @@ const HorizontalScrollCarousel = () => {
             <div className="absolute inset-0 z-10 grid place-content-center">
               <div className="flex justify-between items-center">
                 <div className="flex flex-col gap-4 px-12">
-                  <div className="h-[300px] w-[450px] bg-red-400">
-                    {/* Image */}
+                  <div className="h-[300px] w-[450px] ">
+                  <Image src={Gallery4} alt="Property Image" className="rounded-md shadow-md w-[500px] h-[310px]"></Image>
                   </div>
-                  <div className="h-[300px] w-[450px] bg-red-300">
-                    {/* Image */}
+                  <div className="h-[300px] w-[450px] ">
+                  <Image src={Gallery5} alt="Property Image" className="rounded-md shadow-md w-[500px] h-[310px]"></Image>
                   </div>
                 </div>
                 <div className="aboutUStext flex flex-col items-start gap-8">
@@ -99,14 +105,20 @@ const HorizontalScrollCarousel = () => {
           </div>
           <div className="page3 group relative h-[650px] w-[1500px] overflow-hidden bg-primary text-secondary">
             <div className="relative inset-0 z-10 flex items-center justify-around ">
-              <div className="w-[300px] h-[600px] bg-red-100 flex items-start justify-center">
-                <div className="w-[300px] h-[300px] bg-red-400"></div>
+              <div className="w-[300px] h-[600px]  flex items-start justify-center">
+                <div className="w-[300px] h-[300px] ">
+                    <Image src={Gallery1} alt="Property Image" className="rounded-md shadow-md"></Image>
+                </div>
               </div>
-              <div className="w-[300px] h-screen bg-red-100 flex items-end justify-center">
-                <div className="w-[300px] h-[300px] bg-red-400"></div>
+              <div className="w-[300px] h-screen  flex items-center justify-center">
+                <div className="w-[300px] h-[300px] ">
+                <Image src={Gallery2} alt="Property Image" className="rounded-md shadow-md"></Image>
+                </div>
               </div>
-              <div className="w-[300px] h-screen bg-red-100 flex items-center  justify-center">
-                <div className="w-[300px] h-[300px] bg-red-400"></div>
+              <div className="w-[300px] h-screen  flex items-start  justify-center">
+                <div className="w-[300px] h-[300px] ">
+                <Image src={Gallery3} alt="Property Image" className="rounded-md  shadow-md"></Image>
+                </div>
               </div>
             </div>
           </div>

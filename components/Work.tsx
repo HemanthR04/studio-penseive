@@ -1,7 +1,13 @@
 "use client";
+import Gallery1 from '../public/Gallery1.png'
+import Gallery2 from '../public/Gallery2.png'
+import Gallery3 from '../public/Gallery3.png'
+import Gallery4 from '../public/Gallery4.png'
+import Gallery5 from '../public/Gallery5.png'
 
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
 
 const Work = () => {
   const targetRef = useRef<HTMLDivElement | null>(null);
@@ -26,9 +32,11 @@ const Work = () => {
         <h1 className="text-primary text-[48px] py-10 font-Switzer font-bold tracking-widest">NIRVANA</h1>
         <motion.div
           whileInView={{ scaleX: 1.2}}
-          transition={{ duration: 2 }}
-          className="w-[50%] h-[70%] bg-white rounded-lg "
-        ></motion.div>
+          transition={{ duration: 0.5 }}
+          className="w-[30%] h-[70%] bg-white rounded-lg "
+        >
+          <Image src={Gallery4} alt="Property Image" className="rounded-md shadow-md w-[100%] h-[100%]"></Image>
+        </motion.div>
       </motion.div>
       <motion.div
         style={{ scaleX: x }}
@@ -37,9 +45,11 @@ const Work = () => {
         <h1 className="text-primary text-[48px] py-10 font-Switzer font-bold tracking-widest">NIRVANA</h1>
         <motion.div
           whileInView={{ scaleX: 1.2}}
-          transition={{ duration: 2,delay:0.2  }}
-          className="w-[50%] h-[70%] bg-white rounded-lg"
-        ></motion.div>
+          transition={{ duration: 0.5 }}
+          className="w-[30%] h-[70%] bg-white rounded-lg "
+        >
+          <Image src={Gallery3} alt="Property Image" className="rounded-md shadow-md w-[100%] h-[100%]"></Image>
+        </motion.div>
       </motion.div>
       <motion.div
         style={{ scaleX: x }}
@@ -48,9 +58,11 @@ const Work = () => {
         <h1 className="text-secondary text-[48px] py-10 font-Switzer font-bold tracking-widest">NIRVANA</h1>
         <motion.div
           whileInView={{ scaleX: 1.2}}
-          transition={{ duration: 2,delay:0.2  }}
-          className="w-[50%] h-[70%] bg-white rounded-lg"
-        ></motion.div>
+          transition={{ duration: 0.5 }}
+          className="w-[30%] h-[70%] bg-white rounded-lg "
+        >
+          <Image src={Gallery2} alt="Property Image" className="rounded-md shadow-md w-[100%] h-[100%]"></Image>
+        </motion.div>
       </motion.div>
       <motion.div
         style={{ scaleX: x }}
@@ -59,9 +71,11 @@ const Work = () => {
         <h1 className="text-secondary text-[48px] py-10 font-Switzer font-bold tracking-widest">NIRVANA</h1>
         <motion.div
           whileInView={{ scaleX: 1.2}}
-          transition={{ duration: 2 ,delay:0.2}}
-          className="w-[50%] h-[70%] bg-white rounded-lg shadow-lg"
-        ></motion.div>
+          transition={{ duration: 0.5 }}
+          className="w-[30%] h-[70%] bg-white rounded-lg "
+        >
+          <Image src={Gallery1} alt="Property Image" className="rounded-md shadow-md w-[100%] h-[100%]"></Image>
+        </motion.div>
       </motion.div>
 
      
