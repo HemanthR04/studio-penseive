@@ -30,9 +30,10 @@ const Work = () => {
         className="w-[94%] rounded-md mx-auto h-[90vh] sticky top-10 -z-10 flex flex-col justify-center items-center text-[200px] text-secondary bg-[#1b1c1f] shadow-2xl"
       >
         <h1 className="text-primary text-[48px] py-10 font-Switzer font-bold tracking-widest">NORTH</h1>
-        <motion.div
-          whileInView={{ scaleX: 1.2}}
-          transition={{ duration: 0.5 }}
+        <motion.div 
+        initial={{scale:0.8}}
+          whileInView={{ scale: 1.2}}
+          transition={{ duration: 1 }}
           className="w-[30%] h-[70%] bg-white rounded-lg "
         >
           <Image src={Gallery4} alt="Property Image" className="rounded-md shadow-md w-[100%] h-[100%]"></Image>
@@ -44,7 +45,8 @@ const Work = () => {
       >
         <h1 className="text-primary text-[48px] py-10 font-Switzer font-bold tracking-widest">SOUTH</h1>
         <motion.div
-          whileInView={{ scaleX: 1.2}}
+          initial={{scale:0.8}}
+          whileInView={{ scale: 1.2}}
           transition={{ duration: 0.5 }}
           className="w-[30%] h-[70%] bg-white rounded-lg "
         >
@@ -57,7 +59,8 @@ const Work = () => {
       >
         <h1 className="text-secondary text-[48px] py-10 font-Switzer font-bold tracking-widest">EAST</h1>
         <motion.div
-          whileInView={{ scaleX: 1.2}}
+          initial={{scale:0.8}}
+          whileInView={{ scale: 1.2}}
           transition={{ duration: 0.5 }}
           className="w-[30%] h-[70%] bg-white rounded-lg "
         >
@@ -70,7 +73,8 @@ const Work = () => {
       >
         <h1 className="text-secondary text-[48px] py-10 font-Switzer font-bold tracking-widest">WEST</h1>
         <motion.div
-          whileInView={{ scaleX: 1.2}}
+          initial={{scale:0.8}}
+          whileInView={{ scale: 1.2}}
           transition={{ duration: 0.5 }}
           className="w-[30%] h-[70%] bg-white rounded-lg "
         >
