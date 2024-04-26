@@ -40,12 +40,12 @@ export default function Home() {
     />
       <Header/>
       <Hero/>
-      <AboutUs/>
+      {/* <AboutUs/>
       <Work/>
 
       <CTA1/>
       
-      <Testimonials/>
+      <Testimonials/> */}
       
       </>
   );

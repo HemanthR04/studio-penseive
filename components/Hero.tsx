@@ -59,7 +59,74 @@ const Hero = () => {
   };
 
   return (
-    <main className="hero w-full h-screen  flex  bg-primary ">
+
+    <>
+    <div className="w-full h-screen p-4 flex flex-col justify-around md:flex md:flex-row-reverse md:p-0">
+    <div className="w-[100%] md:w-[50%] flex flex-col justify-around mx-auto ">
+        <motion.div
+          initial={{ y: 0.25, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.5, type: "tween" }}
+          className=" "
+        >
+          <p className="text-[38.6px] font-normal font-Switzer  leading-[38px] py-10 ">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            dolorem provident, omnis. Natus repellat neque omnis..
+          </p>
+        </motion.div>
+        <motion.div
+          initial={{ y: 0.25, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.75, type: "tween" }}
+          className=" "
+        >
+          <p className="text-[16px] md:text-[14px]  font-Switzer w-[100%] md:w-[30%] leading-[20px]">
+            Lorem ipsum, dolor illum est elit. i blanditiis iste illum est
+            placeat eaque!
+          </p>
+        </motion.div>
+      </div>
+      <div className="Logo flex md:h-screen flex-col justify-end w-[100%] md:w-[50%]">
+      
+        <h1
+          aria-label={text}
+          role="heading"
+          className="text-[100px] md:text-[180px] py-[100px]  px-8 font-Gambarin  leading-[80px]  md:leading-[130px]"
+        >
+          {text.split(" ").map((word, index) => {
+            return (
+              <Word
+                ref={ref}
+                aria-hidden="true"
+                key={index}
+                initial="hidden"
+                animate={ctrls}
+                variants={wordAnimation}
+                transition={{
+                  delayChildren: index * 0.25,
+                  staggerChildren: 0.05,
+                }}
+              >
+                {word.split("").map((character, index) => {
+                  return (
+                    <Character
+                      aria-hidden="true"
+                      key={index}
+                      variants={characterAnimation}
+                    >
+                      {character}
+                    </Character>
+                  );
+                })}
+              </Word>
+            );
+          })}
+        </h1>
+      </div>
+    </div>
+    
+
+    {/* <main className="hero w-full h-screen  flex  bg-primary ">
       <div className="Logo flex h-screen flex-col justify-end w-[50%]">
       
         <h1
@@ -121,7 +188,8 @@ const Hero = () => {
           </p>
         </motion.div>
       </div>
-    </main>
+    </main> */}
+    </>
   );
 };
 
