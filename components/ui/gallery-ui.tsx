@@ -91,7 +91,14 @@ export const InfiniteMovingCards = ({
             
             key={item.id}
           >
-          <Image src={item.image} className="w-[350px] h-[400px] rounded-2xl" alt="/" />
+         <blockquote>
+              <div
+                aria-hidden="true"
+                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
+              ></div>
+              
+              <Image src={item.image} className="w-[350px] h-[400px] rounded-2xl" alt="/" />
+            </blockquote>
           </li>
         ))}
       </ul>

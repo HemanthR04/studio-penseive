@@ -22,8 +22,8 @@ const MyComponent: React.FC = () => {
             <div className="text-MassiveHeading leading-MassiveHeading font-extrabold font-Satoshi mt-[24px]"><h1>STUDIO<br/>PENSIEVE</h1></div>
         </div>
         
-        <Gallery/>
-             
+        {/* <Gallery/>
+              */}
     </div> 
     </>
   );
