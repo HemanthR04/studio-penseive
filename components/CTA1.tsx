@@ -4,11 +4,11 @@ import Link from "next/link";
 const CTA1 = () => {
   return (
     <div className="w-full mt-[100px] text-secondary font-Switzer flex flex-col items-center justify-center">
-      <h1 className="text-[80px] tracking-tighter">
+      <h1 className="text-Heading-mobile tracking-tighter">
         We can help you build your dream space.
       </h1>
       <Link href={"/"}>
-        <div className="px-8 text-[24px] border-[1px] border-black rounded-2xl py-2 shadow-xl hover:bg-gray-200 hover:text-secondary">
+        <div className="bg-secondary text-paragraph text-primary px-4 py-2 mt-[12px] rounded-3xl">
           Contact Us
         </div>
       </Link>
