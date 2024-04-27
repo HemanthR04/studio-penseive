@@ -13,25 +13,25 @@ const data = [{
   id:1,
   name:"NORTH",
   image:Gallery1,
-  classname:"w-[94%] h-[600px] bg-black rounded-lg my-[40px] sticky top-20 -z-10 mx-auto"
+  classname:"w-[94%] h-[500px] bg-black rounded-2xl my-[40px] sticky top-20 -z-10 mx-auto"
 },
 {
   id:1,
   name:"SOUTH",
   image:Gallery2,
-  classname:"w-[96%] h-[600px] bg-[#808080] rounded-lg my-[40px] sticky top-28 -z-10 mx-auto"
+  classname:"w-[96%] h-[500px] bg-[#808080] rounded-2xl my-[40px] sticky top-28 -z-10 mx-auto"
 },
 {
   id:1,
   name:"EAST",
   image:Gallery3,
-  classname:"w-[98%] h-[600px] text-secondary  bg-[#C2BEB6] rounded-lg my-[40px] sticky top-40 -z-10 mx-auto"
+  classname:"w-[98%] h-[500px] text-secondary  bg-[#C2BEB6] rounded-2xl my-[40px] sticky top-40 -z-10 mx-auto"
 },
 {
   id:1,
   name:"WEST",
   image:Gallery4,
-  classname:"w-full h-[600px] text-secondary bg-[#DBDBD9] rounded-lg my-[40px] mx-auto"
+  classname:"w-full h-[500px] text-secondary bg-[#DBDBD9] rounded-2xl my-[40px] mx-auto"
 },]
 
 const Work = () => {

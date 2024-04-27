@@ -1,6 +1,7 @@
 "use client";
 import AboutUs from "@/components/AboutUs";
 import CTA1 from "@/components/CTA1";
+import Contact from "@/components/Contact";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
@@ -17,6 +18,7 @@ export default function Home() {
       <CTA1 />
       <Services />
       <Testimonials />
+      <Contact/>
     </>
   );
 }

@@ -36,7 +36,7 @@ const ProjectCard = ({
           <Image
             src={item.image}
             alt="/"
-            className="w-[80%] mx-auto mt-[40px] rounded-sm"
+            className="w-[90%] h-[350px] mx-auto mt-[40px] rounded-2xl"
           />
         </motion.div>
       ))}
