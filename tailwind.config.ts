@@ -32,7 +32,8 @@ const config: Config = {
       },
       fontFamily:{
         "Gambarin":"Gambarin",
-        "Switzer":"Switzer"
+        "Switzer":"Switzer",
+        "Satoshi":"Satoshi"
       },
       animation: {
         scroll:
@@ -45,6 +46,18 @@ const config: Config = {
           },
         },
       },
+      fontSize:{
+        "Heading-mobile":"24px",
+        "MassiveHeading":"61.1px",
+        "paragraph":"14px",
+        "HeadingMultipleLines":"24px"
+      },
+      lineHeight:{
+        "Heading-mobile":"32px",
+        "MassiveHeading":"60px",
+        "paragraph":"14px",
+        "HeadingMultipleLines":"28px"
+      }
       
     },
     plugins: [addVariablesForColors],

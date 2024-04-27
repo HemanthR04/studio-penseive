@@ -1,196 +1,27 @@
-"use client";
-import React from "react";
-import { motion } from "framer-motion";
-import { useEffect } from "react";
-import styled from "styled-components";
-import { useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import HeroImg from '../public/hero.png'
 import Image from "next/image";
+import * as React from "react";
 
+interface TextBlockProps {
+  text: string;
+  className?: string;
+}
 
-const Word = styled(motion.span)`
-  display: inline-block;
-  margin-right: 0.25em;
-  white-space: nowrap;
-`;
+const TextBlock: React.FC<TextBlockProps> = ({ text, className }) => {
+  return <div className={`w-full ${className}`}>{text}</div>;
+};
 
-const Character = styled(motion.span)`
-  display: inline-block;
-  margin-right: -0.05em;
-`;
-
-const Hero = () => {
-  const text = "Studio Pensieve";
-
-  const ctrls = useAnimation();
-
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-    triggerOnce: true,
-  });
-
-  useEffect(() => {
-    if (inView) {
-      ctrls.start("visible");
-    }
-    if (!inView) {
-      ctrls.start("hidden");
-    }
-  }, [ctrls, inView]);
-  const wordAnimation = {
-    hidden: {},
-    visible: {},
-  };
-
-  const characterAnimation = {
-    hidden: {
-      opacity: 0,
-      y: `0.25em`,
-    },
-    visible: {
-      opacity: 1,
-      y: `0em`,
-      transition: {
-        duration: 1,
-        ease: [0.2, 0.65, 0.3, 0.9],
-      },
-    },
-  };
-
+const MyComponent: React.FC = () => {
   return (
-
-    <>
-    <div className="w-full h-screen p-4 flex flex-col justify-around md:flex md:flex-row-reverse md:p-0">
-    <div className="w-[100%] md:w-[50%] flex flex-col justify-around mx-auto ">
-        <motion.div
-          initial={{ y: 0.25, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.5, type: "tween" }}
-          className=" "
-        >
-          <p className="text-[38.6px] font-normal font-Switzer  leading-[38px] py-10 ">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            dolorem provident, omnis. Natus repellat neque omnis..
-          </p>
-        </motion.div>
-        <motion.div
-          initial={{ y: 0.25, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.75, type: "tween" }}
-          className=" "
-        >
-          <p className="text-[16px] md:text-[14px]  font-Switzer w-[100%] md:w-[30%] leading-[20px]">
-            Lorem ipsum, dolor illum est elit. i blanditiis iste illum est
-            placeat eaque!
-          </p>
-        </motion.div>
-      </div>
-      <div className="Logo flex md:h-screen flex-col justify-end w-[100%] md:w-[50%]">
-      
-        <h1
-          aria-label={text}
-          role="heading"
-          className="text-[100px] md:text-[180px] py-[100px]  px-8 font-Gambarin  leading-[80px]  md:leading-[130px]"
-        >
-          {text.split(" ").map((word, index) => {
-            return (
-              <Word
-                ref={ref}
-                aria-hidden="true"
-                key={index}
-                initial="hidden"
-                animate={ctrls}
-                variants={wordAnimation}
-                transition={{
-                  delayChildren: index * 0.25,
-                  staggerChildren: 0.05,
-                }}
-              >
-                {word.split("").map((character, index) => {
-                  return (
-                    <Character
-                      aria-hidden="true"
-                      key={index}
-                      variants={characterAnimation}
-                    >
-                      {character}
-                    </Character>
-                  );
-                })}
-              </Word>
-            );
-          })}
-        </h1>
-      </div>
-    </div>
-    
-
-    {/* <main className="hero w-full h-screen  flex  bg-primary ">
-      <div className="Logo flex h-screen flex-col justify-end w-[50%]">
-      
-        <h1
-          aria-label={text}
-          role="heading"
-          className="text-[180px] py-[100px]  px-8 font-Gambarin  leading-[130px]"
-        >
-          {text.split(" ").map((word, index) => {
-            return (
-              <Word
-                ref={ref}
-                aria-hidden="true"
-                key={index}
-                initial="hidden"
-                animate={ctrls}
-                variants={wordAnimation}
-                transition={{
-                  delayChildren: index * 0.25,
-                  staggerChildren: 0.05,
-                }}
-              >
-                {word.split("").map((character, index) => {
-                  return (
-                    <Character
-                      aria-hidden="true"
-                      key={index}
-                      variants={characterAnimation}
-                    >
-                      {character}
-                    </Character>
-                  );
-                })}
-              </Word>
-            );
-          })}
-        </h1>
-      </div>
-      <div className="w-[50%] flex flex-col justify-around">
-        <motion.div
-          initial={{ y: 0.25, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.5, type: "tween" }}
-          className=" "
-        >
-          <p className="text-[38.6px] font-normal font-Switzer  leading-[38px] py-10 ">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            dolorem provident, omnis. Natus repellat neque omnis..
-          </p>
-        </motion.div>
-        <motion.div
-          initial={{ y: 0.25, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.75, type: "tween" }}
-          className=" "
-        >
-          <p className="text-[14px]  font-Switzer  w-[30%] leading-[20px]">
-            Lorem ipsum, dolor illum est elit. i blanditiis iste illum est
-            placeat eaque!
-          </p>
-        </motion.div>
-      </div>
-    </main> */}
+    <> 
+    <div className="hero-section w-full h-screen px-4 flex flex-col  items-center gap-[100px] justify-start ">
+        <div className="hero-heading text-Heading-mobile leading-Heading-mobile font-bold font-Satoshi mt-[80px]">Distinguished architecture and interior design firm renowned for its innovative  approach to creating spaces that captivate the imagination.</div>
+        <div className="hero-subheading-logol md:flex md:flex-row-reverse md:w-full md:justify-between ">
+            <p className="font-Satoshi text-paragraph leading-paragraph mt-[80px]">consistently delivering timeless and inspiring architectural solutions that leave a lasting impression.</p>
+            <div className="text-MassiveHeading leading-MassiveHeading font-extrabold font-Satoshi mt-[24px]"><h1>STUDIO<br/>PENSIEVE</h1></div>
+        </div>
+    </div> 
     </>
   );
 };
 
-export default Hero;
+export default MyComponent;

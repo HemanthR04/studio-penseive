@@ -19,6 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link href="https://api.fontshare.com/v2/css?f[]=gambarino@400&f[]=switzer@300,301,400,401,500,501,600,601,700,701,800,801,900,901,1&display=swap" rel="stylesheet"></link>
+        <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,401,500,501,700,701,900,901,1,2&display=swap" rel="stylesheet"></link>
       </head>
       <body>
       <SmoothScrolling>
