@@ -36,12 +36,6 @@ const data = [{
 
 const Work = () => {
 
-  const targetRef = useRef<HTMLDivElement | null>(null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-  });
-
-  const x = useTransform(scrollYProgress, [0, 1], ["98%", "80%"]);
 
   return (
     <div className='work-section w-full px-4 mt-[100px]'>
