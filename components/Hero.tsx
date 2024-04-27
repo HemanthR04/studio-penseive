@@ -10,6 +10,7 @@ import Gallery3 from "../public/Gallery3.png";
 import Gallery4 from "../public/Gallery4.png";
 import Gallery5 from "../public/Gallery5.png";
 import Testimonials from "./Testimonials";
+import { motion } from "framer-motion";
 interface TextBlockProps {
   text: string;
   className?: string;
@@ -23,10 +24,10 @@ const MyComponent: React.FC = () => {
   return (
     <>
       <div className="hero-section w-full px-4 flex flex-col  items-center gap-[100px] justify-start ">
-        <div className="hero-heading text-Heading-mobile leading-Heading-mobile font-bold font-Satoshi mt-[80px]">
+        <motion.div className="hero-heading text-Heading-mobile leading-Heading-mobile font-bold font-Satoshi mt-[80px]">
           Distinguished architecture and interior design firm renowned for its
           innovative approach to creating spaces that captivate the imagination.
-        </div>
+        </motion.div>
         <div className="hero-subheading-logol md:flex md:flex-row-reverse md:w-full md:justify-between ">
           <p className="font-Satoshi text-paragraph leading-paragraph mt-[80px]">
             consistently delivering timeless and inspiring architectural

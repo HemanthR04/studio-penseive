@@ -14,7 +14,7 @@ const Gallery = () => {
     <InfiniteMovingCards
       items={Images}
       direction="right"
-      speed="normal"
+      speed="slow"
     />
     
   </div>
@@ -22,7 +22,7 @@ const Gallery = () => {
      <InfiniteMovingCards
        items={Images}
        direction="left"
-       speed="normal"
+       speed="slow"
      />
      
    </div>

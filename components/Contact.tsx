@@ -12,7 +12,7 @@ const navItems = ["Home", "Work", "About", "Contact us"];
 
 const MyComponent: React.FC = () => {
   return (
-    <div className="flex flex-col items-start pt-10 pr-14 pb-4 pl-6 bg-zinc-800 max-w-[360px]">
+    <div className="flex flex-col items-start pt-10 pr-14 pb-4 pl-6 bg-secondary w-full">
       <div className="flex gap-5 justify-between py-px pr-9">
         <img
           loading="lazy"

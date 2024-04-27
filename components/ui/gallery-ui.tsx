@@ -87,7 +87,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[350px] h-[450px]  max-w-full relative rounded-2xl border items-center border-b-0 flex-shrink-0 px-2 py-6 md:w-[450px]"
+            className="w-[300px] h-[400px]  max-w-full relative rounded-2xl border items-center border-b-0 flex-shrink-0 px-2 py-6 md:w-[450px]"
             
             key={item.id}
           >
@@ -97,7 +97,7 @@ export const InfiniteMovingCards = ({
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
               
-              <Image src={item.image} className="w-[350px] h-[400px] rounded-2xl" alt="/" />
+              <Image src={item.image} className="w-[300px] h-[350px] rounded-2xl" alt="/" />
             </blockquote>
           </li>
         ))}
