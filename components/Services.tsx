@@ -10,7 +10,7 @@ interface ServiceCardProps {
 const ServiceCard: React.FC<ServiceCardProps> = ({ number, title, imageUrl, description }) => {
   return (
     <>
-    <h1 className="text-Heading-mobile font-bold mt-[80px]">Services</h1>
+    
     <div className="mt-8">
       <div className="text-2xl font-bold">{number}</div>
       <h3 className="mt-3.5 text-2xl font-bold leading-6">{title}</h3>
@@ -51,6 +51,7 @@ const Services: React.FC = () => {
 
   return (
     <section className="flex flex-col px-5 text-black max-w-[316px]">
+      <h1 className="text-Heading-mobile font-bold mt-[80px]">Services</h1>
       {services.map((service, index) => (
         <ServiceCard key={index} {...service} />
       ))}
