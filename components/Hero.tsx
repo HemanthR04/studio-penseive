@@ -1,5 +1,6 @@
 import Image from "next/image";
 import * as React from "react";
+import Heroimage from '../public/Gallery1.png'
 
 interface TextBlockProps {
   text: string;
@@ -19,6 +20,7 @@ const MyComponent: React.FC = () => {
             <p className="font-Satoshi text-paragraph leading-paragraph mt-[80px]">consistently delivering timeless and inspiring architectural solutions that leave a lasting impression.</p>
             <div className="text-MassiveHeading leading-MassiveHeading font-extrabold font-Satoshi mt-[24px]"><h1>STUDIO<br/>PENSIEVE</h1></div>
         </div>
+        <Image src={Heroimage} alt="Property image" className="rounded-sm"/>
     </div> 
     </>
   );

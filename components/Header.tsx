@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <div className="w-full h-[60px] font-Switzer items-center flex  ">
-      <div className="w-[50%]  px-8 text-Heading-mobile">
+      <div className="w-[50%]  px-4 text-Heading-mobile">
         <h1>hello!</h1>
       </div>
       <div>
