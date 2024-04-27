@@ -21,7 +21,7 @@ const ProjectCard = ({
       target: targetRef,
     });
   
-    const x = useTransform(scrollYProgress, [0, 1], ["110%", "100%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["100%", "80%"]);
   return (
     <>
       {items.map((item, idx) => (
