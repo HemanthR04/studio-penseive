@@ -10,7 +10,7 @@ import { InfiniteMovingCards } from "./ui/gallery-ui";
 const Gallery = () => {
   return (
     <>
-     <div className="h-[40rem] rounded-md flex flex-col antialiased bg-primary items-center justify-center relative overflow-hidden">
+     <div className="h-[40rem] rounded-md flex flex-col antialiased bg-primary items-center justify-center relative overflow-hidden md:hidden">
     <InfiniteMovingCards
       items={Images}
       direction="right"
@@ -18,7 +18,7 @@ const Gallery = () => {
     />
     
   </div>
-     <div className="rounded-md flex flex-col antialiased bg-primary  items-center justify-center relative overflow-hidden">
+     <div className="rounded-md flex flex-col antialiased bg-primary  items-center justify-center relative overflow-hidden md:hidden">
      <InfiniteMovingCards
        items={Images}
        direction="left"

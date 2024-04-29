@@ -23,17 +23,19 @@ const TextBlock: React.FC<TextBlockProps> = ({ text, className }) => {
 const MyComponent: React.FC = () => {
   return (
     <>
-      <div className="hero-section w-full px-4 flex flex-col  items-center gap-[100px] justify-start ">
-        <motion.div className="hero-heading text-Heading-mobile leading-Heading-mobile font-bold font-Satoshi mt-[80px]">
+     
+      <div className="hero-section w-full px-4 flex flex-col  items-end gap-[100px] justify-end ">
+        <motion.div className="hero-heading text-Heading-mobile leading-Heading-mobile font-bold font-Satoshi mt-[80px] md:w-[50%] ">
           Distinguished architecture and interior design firm renowned for its
           innovative approach to creating spaces that captivate the imagination.
         </motion.div>
-        <div className="hero-subheading-logol md:flex md:flex-row-reverse md:w-full md:justify-between ">
-          <p className="font-Satoshi text-paragraph leading-paragraph mt-[80px]">
+        <div className="hero-subheading-logol md:flex md:flex-row-reverse md:w-full justify-end md:items-end">
+          <div><p className="font-Satoshi text-paragraph leading-paragraph mt-[80px] md:w-[50%]">
             consistently delivering timeless and inspiring architectural
             solutions that leave a lasting impression.
           </p>
-          <div className="text-MassiveHeading leading-MassiveHeading font-extrabold font-Satoshi mt-[24px]">
+          </div>
+          <div className="text-MassiveHeading md:text-[120px] md:leading-[100px] leading-MassiveHeading font-extrabold font-Satoshi mt-[24px] md:mt-[0px] md:w-[50%]">
             <h1>
               STUDIO
               <br />

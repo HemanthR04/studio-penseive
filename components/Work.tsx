@@ -38,10 +38,17 @@ const Work = () => {
 
 
   return (
-    <div className='work-section w-full px-4 mt-[100px]'>
-      <h1 className='text-Heading-mobile font-bold'>Work</h1>
-        <ProjectCard items={data}/>
+    <>
+    
+    
+    <div className='work-section w-full px-4 mt-[100px] flex flex-col items-center md:justify-center md:h-screen'>
+      <div className='w-[100%] '>
+      <h1 className='text-Heading-mobile font-bold md:text-[200px]  md:text-center md:uppercase'>Work</h1>
+        </div>
+        <ProjectCard items={data}/> 
     </div>
+     
+     </>
   )
 }
 
