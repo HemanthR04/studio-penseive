@@ -93,7 +93,7 @@ const HorizontalScrollCarousel = () => {
           <motion.div style={{ x }} className="flex gap-4">
             <div className="page1 group relative h-[650px] w-[1500px] overflow-hidden bg-primary text-secondary">
               <div className="absolute inset-0 z-10 grid place-content-center">
-                <p className=" p-8 font-Satoshi md:font-bold text-[200px] uppercase text-secondary backdrop-blur-lg">
+                <p className=" p-8 font-Satoshi md:font-bold text-MassiveHeading-PC uppercase text-secondary backdrop-blur-lg">
                   ABOUT US
                 </p>
               </div>
@@ -101,19 +101,19 @@ const HorizontalScrollCarousel = () => {
           <div className="page2 group relative h-[650px] w-[1500px] overflow-hidden bg-primary text-secondary">
             <div className="absolute inset-0 z-10 grid place-content-center">
               <div className="flex justify-between items-center">
-                <div className="flex flex-col gap-4 px-12">
+                <div className="flex flex-col gap-6 px-12">
                   
-                  <div className="h-[300px] w-[450px] ">
+                  <div className="h-[300px] w-[400px] ">
                   <Image src={Gallery4} alt="Property Image" className="rounded-md shadow-md w-[500px] h-[310px]"></Image>
                   </div>
                   
-                  <div className="h-[300px] w-[450px] ">
+                  <div className="h-[300px] w-[400px] ">
                   <Image src={Gallery5} alt="Property Image" className="rounded-md shadow-md w-[500px] h-[310px]"></Image>
                   </div>
                 </div>
                 <div className="aboutUStext flex flex-col items-start gap-8">
-                  <h1 className="text-[48px]">We are so and so</h1>
-                  <p className="w-[70%] text">
+                  <h1 className="text-Heading-PC  ">We are Studio Pensieve</h1>
+                  <p className="w-[100%] max-w-[70%] text-paragraph-PC">
                     Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. Officia eius mollitia iste amet aspernatur
                     iusto sint consectetur, ex in ratione inventore, sit eveniet

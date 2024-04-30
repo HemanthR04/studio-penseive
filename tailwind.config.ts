@@ -50,13 +50,21 @@ const config: Config = {
         "Heading-mobile":"24px",
         "MassiveHeading":"61.1px",
         "paragraph":"14px",
-        "HeadingMultipleLines":"24px"
+        "HeadingMultipleLines":"24px",
+        "Heading-PC":"28px",
+        "MassiveHeading-PC":"130px",
+        "paragraph-PC":"16px",
+        "HeadingMultipleLines-PC":"24px"
       },
       lineHeight:{
         "Heading-mobile":"32px",
         "MassiveHeading":"60px",
         "paragraph":"14px",
-        "HeadingMultipleLines":"28px"
+        "HeadingMultipleLines":"28px",
+        "Heading-PC":"24px",
+        "MassiveHeading-PC":"110px",
+        "paragraph-PC":"1parapx",
+        "HeadingMultipleLines-PC":"24px"
       }
       
     },

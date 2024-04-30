@@ -50,7 +50,7 @@ const MyComponent: React.FC = () => {
       </div>
       <footer className="mt-20 text-sm leading-5 text-white">
         Designed and Developed
-        <br /> by Hemanth{" "}
+        <br /> by Hemanth ❤️
       </footer>
     </div>
   );

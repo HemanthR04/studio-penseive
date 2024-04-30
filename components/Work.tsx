@@ -49,14 +49,14 @@ const Work = () => {
   return (
     <>
       <div className="flex-col items-center justify-center hidden md:flex">
-        <div className="w-full h-screen sticky top-0 -z-20 flex justify-center items-center text-[200px] text-secondary bg-primary">
+        <div className="w-full h-screen sticky top-0 -z-20 flex justify-center items-center text-MassiveHeading-PC font-bold text-secondary bg-primary">
           <h1>WORK</h1>
         </div>
         <motion.div
           style={{ scaleX: x }}
           className="w-[94%] rounded-md mx-auto h-[100vh] sticky top-[10px] -z-10 flex flex-col justify-center items-center text-[200px] text-secondary bg-[#1b1c1f] shadow-2xl"
         >
-          <h1 className="text-primary text-[48px] py-10 mb-10 font-Switzer font-bold tracking-widest">
+          <h1 className="text-primary text-Heading-PC py-10 mb-10 font-Switzer font-bold tracking-widest">
             NORTH
           </h1>
           <motion.div
@@ -76,7 +76,7 @@ const Work = () => {
           style={{ scaleX: x }}
           className=" w-[96%] rounded-md mx-auto  h-[100vh]  sticky top-[30px] -z-10 flex flex-col justify-center items-center text-[200px] text-secondary bg-[#808080] shadow-2xl"
         >
-          <h1 className="text-primary text-[48px] py-10 font-Switzer mb-10 font-bold tracking-widest">
+          <h1 className="text-primary text-Heading-PC py-10 font-Switzer mb-10 font-bold tracking-widest">
             SOUTH
           </h1>
           <motion.div
@@ -96,7 +96,7 @@ const Work = () => {
           style={{ scaleX: x }}
           className="w-[98%] rounded-md mx-auto  h-[100vh]  flex sticky top-[60px] -z-10  flex-col justify-center items-center text-[200px] text-secondary bg-[#c2beb6] shadow-2xl"
         >
-          <h1 className="text-secondary text-[48px] py-10 font-Switzer mb-10 font-bold tracking-widest">
+          <h1 className="text-secondary text-Heading-PC py-10 font-Switzer mb-10 font-bold tracking-widest">
             EAST
           </h1>
           <motion.div
@@ -116,7 +116,7 @@ const Work = () => {
           style={{ scaleX: x }}
           className="w-[100%] rounded-md mx-auto  h-[100vh]  flex  -z-10 justify-center flex-col items-center text-[200px] text-secondary bg-[#dbdbd9] shadow-2xl"
         >
-          <h1 className="text-secondary text-[48px] py-10 font-Switzer mb-10 font-bold tracking-widest">
+          <h1 className="text-secondary text-Heading-PC py-10 font-Switzer mb-10 font-bold tracking-widest">
             WEST
           </h1>
           <motion.div

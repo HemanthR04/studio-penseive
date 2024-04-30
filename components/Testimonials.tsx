@@ -3,13 +3,13 @@ import { InfiniteMovingCards } from './ui/infinite-moving-cards'
 
 const Testimonials = () => {
   return (
-    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-primary items-center justify-center relative overflow-hidden">
+    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-primary items-center justify-center relative overflow-hidden shadow-b-2xl shadow-gray-900">
     <InfiniteMovingCards
       items={testimonials}
       direction="right"
       speed="normal"
     />
-    <h1 className='text-Heading-mobile font-bold font-Satoshi tracking-tighter'>Our clients love us!</h1>
+    <h1 className='text-Heading-mobile md:text-Heading-PC font-bold font-Satoshi tracking-tighter'>Our clients love us!</h1>
   </div>
   )
 }
