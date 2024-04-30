@@ -12,10 +12,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ number, title, imageUrl, desc
     <>
     
     <div className="mt-8">
-      <div className="text-2xl font-bold">{number}</div>
-      <h3 className="mt-3.5 text-2xl font-bold leading-6">{title}</h3>
+      <div className="text-2xl md:text-4xl font-bold">{number}</div>
+      <h3 className="mt-2 text-2xl md:text-4xl font-bold leading-6">{title}</h3>
      
-      <p className="mt-3 text-sm leading-5">{description}</p>
+      <p className="mt-3 text-sm md:text-[16px] md:max-w-[600px] leading-5">{description}</p>
     </div>
     </>
   );
@@ -50,8 +50,8 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <section className="flex flex-col px-5 text-black max-w-[316px]">
-      <h1 className="text-Heading-mobile font-bold mt-[80px]">Services</h1>
+    <section className="flex flex-col px-5 text-secondary max-w-[316px] md:max-w-full md:mt-[200px]">
+      
       {services.map((service, index) => (
         <ServiceCard key={index} {...service} />
       ))}

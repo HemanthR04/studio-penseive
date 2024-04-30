@@ -24,7 +24,7 @@ const MyComponent: React.FC = () => {
   return (
     <>
      
-      <div className="hero-section w-full px-4 flex flex-col  items-end gap-[100px] justify-end ">
+      <div className="hero-section w-full md:mt-[160px] px-4 flex flex-col  items-end gap-[100px] justify-end ">
         <motion.div className="hero-heading text-Heading-mobile leading-Heading-mobile font-bold font-Satoshi mt-[80px] md:w-[50%] ">
           Distinguished architecture and interior design firm renowned for its
           innovative approach to creating spaces that captivate the imagination.
